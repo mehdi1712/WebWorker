@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Processor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Image Processor with Web Worker</h1>
+
+  <div class="controls">
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <select id="filterSelect">
+      <option value="grayscale">Grayscale</option>
+      <option value="sepia">Sepia</option>
+      <option value="invert">Invert</option>
+      <option value="none">None</option>
+    </select>
+
+    <button id="resetBtn">🗑 Reset</button>
+    <button id="downloadBtn" style="display: none;">📥 Download</button>
+  </div>
+
+  <div class="images">
+    <div class="image-block">
+      <p class="label">Before Processing</p>
+      <canvas id="originalCanvas"></canvas>
+    </div>
+    <div class="image-block">
+      <p class="label">After Processing</p>
+      <canvas id="canvas" class="show"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

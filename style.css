@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+input[type="file"],
+#resetBtn,
+#downloadBtn,
+#filterSelect {
+  padding: 10px 18px;
+  margin: 5px;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"]:hover,
+#resetBtn:hover,
+#downloadBtn:hover,
+#filterSelect:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+#downloadBtn {
+  background-color: #00e1ff;
+  color: #fff;
+  font-weight: bold;
+}
+#downloadBtn:hover {
+  background-color: #00c4e8;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+canvas {
+  max-width: 512px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+canvas.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
