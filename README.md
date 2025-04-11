@@ -32,12 +32,6 @@ Everything runs **in-browser** — no server or backend required.
 
 ---
 
-## 📸 Demo
-
-> _Insert live demo link or GIF here if hosted online_
-
----
-
 ## 🛠️ How to Use
 
 1. Clone or download the repo.
@@ -48,6 +42,4 @@ Everything runs **in-browser** — no server or backend required.
 6. Click **Reset** to start over.
 
 ---
-
-## 📂 Project Structure
 
